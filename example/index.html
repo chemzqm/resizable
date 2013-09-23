@@ -23,12 +23,12 @@ var destroy = document.getElementById('destroy');
 
 make.onclick = function(){
   resizable.el.style.border = '1px solid #999';
-  resizable.build();
+  resizable.bind();
 };
 
 destroy.onclick = function(){
   resizable.el.style.border = '1px solid #ddd';
-  resizable.destroy();
+  resizable.unbind();
 };
 
 </script>

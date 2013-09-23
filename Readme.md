@@ -5,14 +5,14 @@
 
 ## Installation
 
-    $ component install ui-component/resizable
+    $ component install chemzqm/resizable
 
 ## Example
 
 ```js
 var resizable = require('resizable')(myElement);
 resizable.set('handles', 'se, s, e');
-resizable.build();
+resizable.bind();
 ```
 
 ## API
@@ -25,11 +25,11 @@ resizable.build();
 
   Set options.
 
-### resizable.build()
+### resizable.bind()
 
   bind events and append handles.
 
-### resizable.destroy()
+### resizable.unbind()
 
   unbind events and remove handles.
    

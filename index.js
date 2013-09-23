@@ -43,12 +43,12 @@ configurable(Resizable.prototype);
 emitter(Resizable.prototype);
 
 /**
- * build resizable.
+ * bind resizable.
  *
  * @return {Resizable}
  */
 
-Resizable.prototype.build = function(){
+Resizable.prototype.bind = function(){
   var all = split(this.get('handles'))
     , len = all.length
     , handle
@@ -138,7 +138,7 @@ Resizable.prototype.onmouseup = function(e){
  * destroy resizable.
  */
 
-Resizable.prototype.destroy = function(){
+Resizable.prototype.unbind = function(){
   if (this.els.length) {
     var el = this.el;
     this.classes.remove('resizable');
