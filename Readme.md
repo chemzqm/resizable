@@ -3,6 +3,8 @@
 
   UI Resizable component, make any element resizable.
 
+  API changed in this fork.
+
 ## Installation
 
     $ component install chemzqm/resizable
